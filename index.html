@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PBYD4V77Z3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PBYD4V77Z3');
+  </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>17385 S San Carlos Dr, Munds Park AZ 86017 – $499,000</title>
@@ -10,45 +17,103 @@
     html, body { margin:0; padding:0; }
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background:var(--bg); color:var(--ink); }
     .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
-
-    header { position: sticky; top:0; z-index:10; background: rgba(255,255,255,.85); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
-    header .bar { display:flex; align-items:center; justify-content: space-between; padding: 14px 0; gap: 12px; flex-wrap: wrap; }
-    header .addr { font-weight: 600; letter-spacing: .02em; }
-    header .phone a { display:inline-block; padding:8px 12px; border:1px solid var(--line); background:#fff; border-radius: 10px; text-decoration:none; }
-
+    
+    header { 
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.85);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--line);
+    }
+    
+    header .bar { 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 12px;
+      flex-wrap: nowrap;
+    }
+    
+    header .addr { 
+      font-weight: 600;
+      letter-spacing: .02em;
+      flex: 1 1 auto;
+      min-width: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    header .phone { 
+      flex: 0 0 auto;
+    }
+    
+    header .phone a { 
+      display: inline-block;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    
+    header .wrap { 
+      padding-left: max(16px, env(safe-area-inset-left));
+      padding-right: max(16px, env(safe-area-inset-right));
+    }
+    
+    @media (max-width: 520px) {
+      header .bar {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 8px;
+      }
+      header .addr {
+        grid-column: 1 / -1;
+        font-size: 0.98rem;
+      }
+      header .phone {
+        grid-column: 1 / -1;
+        justify-self: start; /* left align */
+      }
+    }
+    
     .hero { margin:20px 0; border:1px solid var(--line); border-radius: 16px; overflow:hidden; background:#fff; position:relative; }
     .hero img { width:100%; aspect-ratio: 16/9; object-fit: cover; display:block; }
     .price { position:absolute; right:16px; bottom:16px; background:#ffffff; border:1px solid var(--line); border-radius: 12px; padding:10px 14px; box-shadow: var(--shadow); font-weight:700; }
-
+    
     .grid { display:grid; gap: 24px; grid-template-columns: 1fr; }
     @media (min-width: 900px) { .grid { grid-template-columns: 2fr 1fr; } }
-
+    
     h1 { font-size: clamp(1.6rem, 1.6vw + 1rem, 2.3rem); margin:0 0 12px; }
     p.lead { color:var(--muted); line-height:1.7; }
-
+    
     .card { background:var(--card); border:1px solid var(--line); border-radius: 16px; padding: 18px; }
-
+    
     .specs { display:grid; gap:16px; grid-template-columns: 1fr; }
     @media (min-width: 640px){ .specs { grid-template-columns: 1fr 1fr; } }
     .specs h3 { margin:0 0 8px; font-size:1rem; }
     .specs ul { margin:0; padding-left: 18px; color:var(--muted); }
-
+    
     .facts ul { list-style:none; margin:0; padding:0; display:grid; gap:12px; }
     .facts li small { display:block; color:var(--muted); text-transform: uppercase; letter-spacing:.04em; }
-
+    
     section { padding: 26px 0; }
     .section-title { font-size:1.35rem; font-weight:600; margin:0 0 10px; }
     .muted { color:var(--muted); }
-
+    
     .gallery { display:grid; gap:8px; grid-template-columns: repeat(2, 1fr); }
     @media (min-width: 640px){ .gallery { grid-template-columns: repeat(3, 1fr); } }
     @media (min-width: 960px){ .gallery { grid-template-columns: repeat(4, 1fr); } }
     .gallery figure { margin:0; border:1px solid var(--line); background:#fff; border-radius:12px; overflow:hidden; aspect-ratio: 4/3; }
     .gallery a { display:block; }
     .gallery img { width:100%; height:100%; object-fit: cover; display:block; }
-
+    
     footer { text-align:center; color:var(--muted); font-size:.8rem; padding: 40px 0 60px; }
-
+    
     .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.88); display:none; align-items: center; justify-content: center; z-index: 50; }
     .lightbox.open { display:flex; }
     .lightbox img { max-width: 92vw; max-height: 86vh; display:block; border-radius:12px; box-shadow: var(--shadow); }
@@ -61,26 +126,26 @@
   <header>
     <div class="wrap bar">
       <div class="addr">17385 S. San Carlos Dr. Munds Park, AZ</div>
-      <div class="phone"><a href="tel:16028853732">(602) 885-3732</a></div>
+      <div class="phone"><a href="tel:16028853732">Call or text (602) 885-3732</a></div>
     </div>
   </header>
-
+  
   <main class="wrap">
     <div class="hero">
       <img src="img/IMG_1661.jpeg" alt="Front exterior – large covered deck" />
       <div class="price">$499,000</div>
     </div>
-
+    
     <section class="grid">
       <article>
-        <h1>Beautifully Maintained A-Frame with Expansive Covered Deck</h1>
+        <h1>Beautifully Maintained Cabin with Expansive Covered Deck</h1>
         <p class="lead">
           Set among tall pines in Munds Park, this well-cared-for cabin delivers practical updates and excellent outdoor living. A
           30' × 16' covered concrete deck spans the front, complemented by a full wraparound concrete walkway and an
           8' × 22.5' rear sundeck. Inside you’ll find 1,200 sq ft, a main-floor bedroom, an upstairs second bedroom, and
           1.5 baths including a walk-in shower with jetted tub.
         </p>
-
+        
         <div class="specs">
           <div class="card">
             <h3>Layout</h3>
@@ -90,7 +155,7 @@
               <li>Bathrooms: 1.5 (walk-in shower w/ jetted tub)</li>
             </ul>
           </div>
-
+          
           <div class="card">
             <h3>Kitchen &amp; Utilities</h3>
             <ul>
@@ -98,7 +163,7 @@
               <li>Washer &amp; gas dryer</li>
             </ul>
           </div>
-
+          
           <div class="card">
             <h3>Construction &amp; Comfort</h3>
             <ul>
@@ -108,7 +173,7 @@
               <li>HVAC: propane heat &amp; AC</li>
             </ul>
           </div>
-
+          
           <div class="card">
             <h3>Site &amp; Storage</h3>
             <ul>
@@ -117,7 +182,7 @@
               <li>Wraparound walkway + rear sundeck</li>
             </ul>
           </div>
-
+          
           <div class="card">
             <h3>Services</h3>
             <ul>
@@ -129,7 +194,7 @@
           </div>
         </div>
       </article>
-
+      
       <aside class="card facts">
         <h3 class="section-title">Property Facts</h3>
         <ul>
@@ -144,7 +209,7 @@
         </div>
       </aside>
     </section>
-
+    
     <section>
       <h2 class="section-title">Photo Gallery</h2>
       <p class="muted">Click any image to view full-screen.</p>
@@ -204,19 +269,18 @@
       </div>
     </section>
   </main>
-
+  
   <footer>
     © 2025 17385 S San Carlos Dr Munds Park AZ 86017
   </footer>
-
+  
   <script>
     (function(){
       const gallery = document.getElementById('gallery');
       if(!gallery) return;
       const links = Array.from(gallery.querySelectorAll('a'));
       if(links.length === 0) return;
-
-      // Build overlay once
+      
       const overlay = document.createElement('div');
       overlay.className = 'lightbox';
       overlay.setAttribute('role','dialog');
@@ -226,7 +290,7 @@
       img.alt = 'Expanded property photo';
       overlay.appendChild(img);
       document.body.appendChild(overlay);
-
+      
       let idx = 0;
       function open(i){ idx = i; const href = links[idx].getAttribute('href'); if(!href) return; img.src = href; overlay.classList.add('open'); preload(); }
       function close(){ overlay.classList.remove('open'); img.removeAttribute('src'); }
@@ -236,7 +300,7 @@
         const nextIdx = (idx + 1) % links.length; const prevIdx = (idx + links.length - 1) % links.length;
         [nextIdx, prevIdx].forEach(i=>{ const u = links[i].getAttribute('href'); if(u){ const im = new Image(); im.src = u; }});
       }
-
+      
       gallery.addEventListener('click', function(e){
         const target = e.target;
         if(!(target instanceof Element)) return;
@@ -246,7 +310,7 @@
         const i = links.indexOf(a);
         if(i >= 0) open(i);
       });
-
+      
       overlay.addEventListener('click', function(e){ if(e.target === overlay) close(); });
       overlay.querySelector('.close').addEventListener('click', close);
       overlay.querySelector('.prev').addEventListener('click', prev);
